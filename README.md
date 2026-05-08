@@ -113,8 +113,7 @@ pip install pandas matplotlib
 3. Abre y ejecuta `Notebook.ipynb` en orden desde el Día 1
 
 #Presentación 
-https://canva.link/8i9fs3hs6t0b60v
-
+https://www.canva.com/design/DAHJCRq3W6w?ui=eyJLIjp7IkEiOiI2YTJiMjhiNC0wNzFlLTQ4MTctYmIzNC1kOTVkNjE0NDlkYzkifX0
 
 
 
