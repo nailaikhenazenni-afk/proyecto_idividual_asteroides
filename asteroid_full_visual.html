@@ -1,0 +1,942 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                body { background-color: #06070a; color: #f0f6fc; font-family: 'Segoe UI', sans-serif; padding: 50px; }
+                .dashboard { background: #0d1117; border: 1px solid #30363d; border-radius: 16px; max-width: 1000px; margin: auto; padding: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+                h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center; }
+                table { width: 100%; border-collapse: collapse; }
+                th { text-align: left; padding: 12px 20px; border-bottom: 2px solid #30363d; color: #8b949e; font-size: 0.75rem; text-transform: uppercase; }
+                td { padding: 15px 20px; border-bottom: 1px solid #21262d; vertical-align: middle; }
+
+                .visual-cell { width: 100px; display: flex; justify-content: center; align-items: center; min-height: 80px; }
+                .asteroid-preview { border-radius: 50%; transition: transform 0.2s; }
+                .asteroid-preview:hover { transform: scale(1.2); }
+
+                .size-text { font-family: 'Consolas', monospace; color: #00d4ff; font-weight: bold; }
+                .mag-text { color: #ffcc00; font-weight: 500; }
+                tr:hover { background: rgba(255,255,255,0.02); }
+            </style>
+        </head>
+        <body>
+            <div class="dashboard">
+                <h1>Visual Observatory: Diameter & Magnitude</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Escala & Brillo</th>
+                            <th>Diámetro</th>
+                            <th>Magnitud</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr>
+                <td>Ganymed</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 60.0px; 
+                        height: 60.0px; 
+                        box-shadow: 0 0 41.66px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">63,029.30 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">9.17 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Eros</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 34.20989920560755px; 
+                        height: 34.20989920560755px; 
+                        box-shadow: 0 0 39.22px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">35,937.10 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">10.39 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Sisyphus</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 13.066304083973643px; 
+                        height: 13.066304083973643px; 
+                        box-shadow: 0 0 35.04px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">13,726.00 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">12.48 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Eric</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 12.65173498674426px; 
+                        height: 12.65173498674426px; 
+                        box-shadow: 0 0 34.9px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">13,290.50 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">12.55 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Ivar</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 11.327969690286897px; 
+                        height: 11.327969690286897px; 
+                        box-shadow: 0 0 34.42px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">11,899.90 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">12.79 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Don Quixote</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 10.142616211825295px; 
+                        height: 10.142616211825295px; 
+                        box-shadow: 0 0 33.94px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">10,654.70 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">13.03 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Hephaistos</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 8.358941000455342px; 
+                        height: 8.358941000455342px; 
+                        box-shadow: 0 0 33.1px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">8,780.97 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">13.45 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Tezcatlipoca</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 7.114614948920581px; 
+                        height: 7.114614948920581px; 
+                        box-shadow: 0 0 32.4px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">7,473.82 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">13.8 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Alinda</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 7.049388141705524px; 
+                        height: 7.049388141705524px; 
+                        box-shadow: 0 0 32.36px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">7,405.30 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">13.82 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Heracles</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 6.370170698389479px; 
+                        height: 6.370170698389479px; 
+                        box-shadow: 0 0 31.92px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">6,691.79 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.04 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Florence</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 6.253910482902397px; 
+                        height: 6.253910482902397px; 
+                        box-shadow: 0 0 31.84px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">6,569.66 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.08 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Cuno</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.972431868987916px; 
+                        height: 5.972431868987916px; 
+                        box-shadow: 0 0 31.64px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">6,273.97 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.18 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Toro</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.703633072237832px; 
+                        height: 5.703633072237832px; 
+                        box-shadow: 0 0 31.44px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,991.60 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.28 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Melissabrucker</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.573798217654329px; 
+                        height: 5.573798217654329px; 
+                        box-shadow: 0 0 31.34px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,855.21 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.33 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Chelyabinsk</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.548191079386888px; 
+                        height: 5.548191079386888px; 
+                        box-shadow: 0 0 31.32px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,828.31 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.34 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Cuyo</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.446923890952303px; 
+                        height: 5.446923890952303px; 
+                        box-shadow: 0 0 31.24px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,721.93 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.38 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Phaethon</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.446923890952303px; 
+                        height: 5.446923890952303px; 
+                        box-shadow: 0 0 31.24px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,721.93 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.38 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Betulia</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5.060008599175303px; 
+                        height: 5.060008599175303px; 
+                        box-shadow: 0 0 30.92px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,315.48 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.54 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Orthos</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.86px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">5,242.55 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.57 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Leonard</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.54px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,870.15 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.73 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Oze</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.54px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,870.15 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.73 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Daedalus</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.34px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,650.96 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.83 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Magellan</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.2px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,503.42 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.9 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Bede</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.14px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,441.63 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.93 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Boreas</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.14px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,441.63 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.93 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Zao</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.12px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,421.23 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.94 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Miwablock</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.12px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,421.23 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.94 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Davidaguilar</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.08px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,380.69 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.96 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Morpheus</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.06px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,360.56 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.97 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Nefertiti</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 30.02px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,320.59 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">14.99 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Brucemurray</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.9px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,202.84 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.05 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Cadmus</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.76px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,069.51 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.12 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Camillo</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.72px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">4,032.21 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.14 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Sigurd</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.66px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,976.88 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.17 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Beltrovata</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.64px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,958.61 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.18 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Taranis</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.54px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,868.50 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.23 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Geographos</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.48px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,815.42 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.26 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Midas</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.44px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,780.44 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.28 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Toutatis</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.42px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,763.07 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.29 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Eger</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.4px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,745.78 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.3 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Oljato</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.36px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,711.44 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.32 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Seleucus</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.32px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,677.41 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.34 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Antinous</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.3px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,660.52 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.35 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Lyapunov</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.3px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,660.52 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.35 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Robwhiteley</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.18px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,560.76 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.41 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Cruithne</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.16px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,544.40 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.42 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Zeus</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 29.06px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,463.72 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.47 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Albert</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 28.82px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,277.50 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.59 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Mithra</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 28.76px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,232.53 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.62 H</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Nut</td>
+                <td class="visual-cell">
+                    <div class="asteroid-preview" style="
+                        width: 5px; 
+                        height: 5px; 
+                        box-shadow: 0 0 28.7px rgba(255, 204, 0, 1.0);
+                        background: radial-gradient(circle at 30% 30%, #58a6ff, #00d4ff);
+                    "></div>
+                </td>
+                <td class="data-cell">
+                    <span class="size-text">3,188.18 m</span>
+                </td>
+                <td class="data-cell">
+                    <span class="mag-text">15.65 H</span>
+                </td>
+            </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+        </body>
+        </html>
+        

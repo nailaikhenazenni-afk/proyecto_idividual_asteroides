@@ -1,0 +1,97 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                body { background-color: #0b0e14; color: #adbac7; font-family: 'Segoe UI', sans-serif; padding: 40px; margin: 0; }
+                .container { max-width: 900px; margin: auto; }
+                .header { text-align: center; border-bottom: 1px solid #373e47; padding-bottom: 20px; margin-bottom: 40px; }
+                h1 { color: #58a6ff; text-transform: uppercase; letter-spacing: 2px; margin: 0; }
+                .stats { color: #768390; font-size: 0.9rem; margin-top: 10px; }
+
+                /* Tabla */
+                table { width: 100%; border-collapse: collapse; background: #1c2128; border: 1px solid #373e47; border-radius: 8px; overflow: hidden; margin-bottom: 60px; }
+                th { background: #2d333b; color: #58a6ff; text-align: left; padding: 15px; font-size: 0.8rem; text-transform: uppercase; }
+                td { padding: 15px; border-bottom: 1px solid #373e47; font-size: 1rem; }
+                .impact-val { font-family: 'Consolas', monospace; font-weight: bold; }
+
+                /* Gráfica */
+                .chart-box { background: #1c2128; border: 1px solid #373e47; border-radius: 12px; height: 350px; display: flex; justify-content: space-around; align-items: flex-end; padding: 40px 20px; position: relative; }
+                .bar-container { display: flex; flex-direction: column; align-items: center; width: 15%; height: 100%; justify-content: flex-end; }
+                .bar { width: 100%; border-radius: 4px 4px 0 0; border: 1px solid rgba(255,255,255,0.1); }
+                .bar-label { margin-top: 15px; font-size: 0.75rem; color: #768390; text-align: center; height: 40px; }
+                .bar-value { margin-bottom: 10px; font-size: 0.8rem; font-weight: bold; font-family: monospace; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>REPORTE UNIFICADO: Ganymed</h1>
+                    <div class="stats">Diámetro: 63,029.30 m | Velocidad: 22,693.90 km/h</div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr><th>Localización</th><th>Gravedad (mGal)</th><th>Índice de Impacto</th></tr>
+                    </thead>
+                    <tbody>
+            <tr>
+                <td>Monte Everest</td>
+                <td style="color: #3b82f6;">+663.18</td>
+                <td class="impact-val">1,431,045.41</td>
+            </tr>
+            <tr>
+                <td>Ciudad de México</td>
+                <td style="color: #0ea5e9;">+33.57</td>
+                <td class="impact-val">1,430,415.80</td>
+            </tr>
+            <tr>
+                <td>Castellón de la Plana</td>
+                <td style="color: #10b981;">+5.46</td>
+                <td class="impact-val">1,430,387.69</td>
+            </tr>
+            <tr>
+                <td>Cuenca de Tanezrouft</td>
+                <td style="color: #34d399;">-11.47</td>
+                <td class="impact-val">1,430,370.75</td>
+            </tr>
+            <tr>
+                <td>Fosa de las Marianas</td>
+                <td style="color: #a3e635;">-318.59</td>
+                <td class="impact-val">1,430,063.64</td>
+            </tr></tbody>
+                </table>
+
+                <div class="chart-box">
+                    
+            <div class="bar-container">
+                <div class="bar-value">1,431,045</div>
+                <div class="bar" style="height: 100%; background: linear-gradient(to top, #1e293b, #3b82f6);"></div>
+                <div class="bar-label">Monte Everest</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar-value">1,430,416</div>
+                <div class="bar" style="height: 99.9560034925796%; background: linear-gradient(to top, #1e293b, #0ea5e9);"></div>
+                <div class="bar-label">Ciudad de México</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar-value">1,430,388</div>
+                <div class="bar" style="height: 99.95403919432579%; background: linear-gradient(to top, #1e293b, #10b981);"></div>
+                <div class="bar-label">Castellón de la Plana</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar-value">1,430,371</div>
+                <div class="bar" style="height: 99.95285544432863%; background: linear-gradient(to top, #1e293b, #34d399);"></div>
+                <div class="bar-label">Cuenca de Tanezrouft</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar-value">1,430,064</div>
+                <div class="bar" style="height: 99.93139490940402%; background: linear-gradient(to top, #1e293b, #a3e635);"></div>
+                <div class="bar-label">Fosa de las Marianas</div>
+            </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        

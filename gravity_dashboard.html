@@ -1,0 +1,127 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gravity Data Table</title>
+        <style>
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                margin: 0;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h1 {
+                color: #ffffff;
+                margin-bottom: 30px;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+            .table-container {
+                width: 100%;
+                max-width: 1000px;
+                background: #1e1e1e;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                text-align: left;
+            }
+            th {
+                background-color: #2c2c2c;
+                color: #bb86fc;
+                padding: 18px;
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                letter-spacing: 0.5px;
+                border-bottom: 2px solid #333;
+            }
+            td {
+                padding: 15px 18px;
+                border-bottom: 1px solid #2c2c2c;
+                font-size: 1rem;
+            }
+            tr:last-child td {
+                border-bottom: none;
+            }
+            tr:hover {
+                background-color: #252525;
+            }
+            .loc-name {
+                color: #ffffff;
+                font-weight: 500;
+            }
+            .grav-val {
+                font-family: 'Courier New', monospace;
+                color: #03dac6;
+                text-align: right;
+            }
+            .unit-label {
+                font-size: 0.75rem;
+                color: #777;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Anomalías Gravitatorias Terrestres</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Localización</th>
+                        <th>Latitud (°)</th>
+                        <th>Longitud (°)</th>
+                        <th style="text-align: right;">Valor (mGal)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td class="loc-name">Monte Everest</td>
+            <td>27.9800</td>
+            <td>86.9200</td>
+            <td class="grav-val">663.1850</td>
+        </tr>
+        
+        <tr>
+            <td class="loc-name">Ciudad de México</td>
+            <td>19.4300</td>
+            <td>-99.1300</td>
+            <td class="grav-val">33.5749</td>
+        </tr>
+        
+        <tr>
+            <td class="loc-name">Castellón de la Plana</td>
+            <td>39.9860</td>
+            <td>-0.0513</td>
+            <td class="grav-val">5.4615</td>
+        </tr>
+        
+        <tr>
+            <td class="loc-name">Cuenca de Tanezrouft</td>
+            <td>22.2510</td>
+            <td>-2.2460</td>
+            <td class="grav-val">-11.4702</td>
+        </tr>
+        
+        <tr>
+            <td class="loc-name">Fosa de las Marianas</td>
+            <td>11.3700</td>
+            <td>142.5900</td>
+            <td class="grav-val">-318.5890</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    

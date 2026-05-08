@@ -1,0 +1,392 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Asteroid Velocity Dashboard</title>
+        <style>
+            :root {
+                --bg: #05070a;
+                --card-bg: #0f121a;
+                --gold: #ffcc00;
+                --neon: #00ffcc;
+                --text: #e0e0e0;
+            }
+            body {
+                background-color: var(--bg);
+                color: var(--text);
+                font-family: 'Segoe UI', Arial, sans-serif;
+                margin: 0;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h1 {
+                color: var(--gold);
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                border-bottom: 2px solid var(--gold);
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+            }
+            .table-container {
+                background: var(--card-bg);
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                border: 1px solid #2a2d35;
+                width: 100%;
+                max-width: 900px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th {
+                text-align: left;
+                padding: 15px;
+                background: #1a1e29;
+                color: var(--gold);
+                text-transform: uppercase;
+                font-size: 0.85rem;
+            }
+            td {
+                padding: 15px;
+                border-bottom: 1px solid #222;
+            }
+            tr:hover {
+                background: rgba(255, 204, 0, 0.05);
+            }
+            .speed {
+                color: var(--neon);
+                font-weight: bold;
+                font-family: 'Courier New', monospace;
+            }
+            .footer {
+                margin-top: 20px;
+                font-size: 0.8rem;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🚀 Space Velocity Ranking</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asteroid Name</th>
+                        <th>Approach Date</th>
+                        <th>Velocity (km/h)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td>Marsyas</td>
+            <td>1924-06-26</td>
+            <td class="speed">264,514.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Tjelvar</td>
+            <td>1902-07-17</td>
+            <td class="speed">170,819.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Izhdubar</td>
+            <td>1900-05-06</td>
+            <td class="speed">125,744.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Tantalus</td>
+            <td>1912-12-23</td>
+            <td class="speed">122,044.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Phaethon</td>
+            <td>1924-10-21</td>
+            <td class="speed">121,960.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Illapa</td>
+            <td>1903-01-24</td>
+            <td class="speed">121,443.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Midas</td>
+            <td>1916-09-24</td>
+            <td class="speed">113,051.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Khufu</td>
+            <td>1912-09-09</td>
+            <td class="speed">108,037.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Jason</td>
+            <td>1901-08-24</td>
+            <td class="speed">106,964.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Hephaistos</td>
+            <td>1905-03-14</td>
+            <td class="speed">105,916.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Camillo</td>
+            <td>1934-02-14</td>
+            <td class="speed">104,765.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Morpheus</td>
+            <td>1913-05-12</td>
+            <td class="speed">102,826.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Aristaeus</td>
+            <td>1958-10-17</td>
+            <td class="speed">98,776.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Icarus</td>
+            <td>1902-06-11</td>
+            <td class="speed">97,229.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Oljato</td>
+            <td>1903-06-18</td>
+            <td class="speed">91,244.30 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Saule</td>
+            <td>1921-07-15</td>
+            <td class="speed">84,115.30 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Sekhmet</td>
+            <td>1908-05-16</td>
+            <td class="speed">83,186.60 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Orthos</td>
+            <td>1920-10-05</td>
+            <td class="speed">83,134.10 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Sisyphus</td>
+            <td>1959-11-17</td>
+            <td class="speed">83,065.60 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Ubasti</td>
+            <td>1911-07-24</td>
+            <td class="speed">81,454.50 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Syrinx</td>
+            <td>1950-12-01</td>
+            <td class="speed">81,229.60 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Mithra</td>
+            <td>1902-08-23</td>
+            <td class="speed">79,937.70 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Sigurd</td>
+            <td>1917-09-16</td>
+            <td class="speed">79,379.80 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Tukmit</td>
+            <td>1907-07-11</td>
+            <td class="speed">77,919.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Cadmus</td>
+            <td>1923-12-13</td>
+            <td class="speed">77,797.50 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Pan</td>
+            <td>1907-12-11</td>
+            <td class="speed">77,122.80 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Daedalus</td>
+            <td>1909-11-13</td>
+            <td class="speed">76,038.40 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Cerberus</td>
+            <td>1905-12-23</td>
+            <td class="speed">74,066.50 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Hermes</td>
+            <td>1900-05-08</td>
+            <td class="speed">73,913.60 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Kwiila</td>
+            <td>1901-08-10</td>
+            <td class="speed">73,803.90 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Atira</td>
+            <td>1912-03-04</td>
+            <td class="speed">72,219.90 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Epona</td>
+            <td>1979-08-01</td>
+            <td class="speed">71,162.20 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Moshup</td>
+            <td>1912-05-30</td>
+            <td class="speed">70,803.20 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Adonis</td>
+            <td>1902-07-16</td>
+            <td class="speed">69,587.40 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Robwhiteley</td>
+            <td>2007-02-28</td>
+            <td class="speed">67,006.70 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Minos</td>
+            <td>1900-08-23</td>
+            <td class="speed">67,001.00 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Mjolnir</td>
+            <td>1918-03-24</td>
+            <td class="speed">66,864.50 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Chelyabinsk</td>
+            <td>2142-08-29</td>
+            <td class="speed">66,474.30 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Poseidon</td>
+            <td>1902-08-11</td>
+            <td class="speed">66,353.30 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Nut</td>
+            <td>1910-10-22</td>
+            <td class="speed">65,513.30 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Antinous</td>
+            <td>1907-10-11</td>
+            <td class="speed">65,086.20 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Ra-Shalom</td>
+            <td>1906-12-24</td>
+            <td class="speed">64,782.50 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Cuno</td>
+            <td>1903-09-16</td>
+            <td class="speed">64,644.60 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Cacus</td>
+            <td>1910-09-09</td>
+            <td class="speed">63,670.70 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Hathor</td>
+            <td>1901-07-04</td>
+            <td class="speed">62,969.60 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Selqet</td>
+            <td>1900-08-26</td>
+            <td class="speed">62,961.50 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Duende</td>
+            <td>1913-08-08</td>
+            <td class="speed">62,708.20 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Seneca</td>
+            <td>1905-03-01</td>
+            <td class="speed">61,685.30 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Eger</td>
+            <td>1981-08-03</td>
+            <td class="speed">61,046.90 km/h</td>
+        </tr>
+        
+        <tr>
+            <td>Cruithne</td>
+            <td>1900-07-17</td>
+            <td class="speed">59,753.20 km/h</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">Real-time data from MySQL Local Database</div>
+    </body>
+    </html>
+    
