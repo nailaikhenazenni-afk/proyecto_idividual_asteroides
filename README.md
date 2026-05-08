@@ -47,7 +47,7 @@ Carga e inspección del dataset
 * Carga e inspección del dataset (`shape`, `info`, `describe`)
 * Eliminamos las columnas que no vamos a necesitar
 * Identificación de columnas clave y clasificación de variables
-* Eliminamos las columnas 'id', 'neo_id', 'name', 'short_name' , 'designation' y reemplazamos por 'name', así solo nos quedamos con los nombres vernaculares ya que son los públicos que la gente recuerda y además suelen ser los más grandes y necesitan un nombre porque los medios los utilizan
+* Eliminamos las columnas 'id', 'neo_id', 'name', 'short_name' , 'designation' y reemplazamos por 'name', así solo nos quedamos con los nombres comunes ya que son los públicos que la gente recuerda y además suelen ser los más grandes y necesitan un nombre porque los medios los utilizan
 * **Nulos:** eliminación de filas sin `name` ni `velocity_km`
 * **Duplicados:** `drop_duplicates()` + `reset_index()`
 * Sacar los datos enquistados en la columna 'close_approach_data', paso importante y complicado porque allí estaba la velocidad, dato esencial para nuestro análisis
